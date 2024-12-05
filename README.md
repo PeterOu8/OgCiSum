@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Description
+**Ogcisum** is a cross-platform mobile app for music sharing based on location providing a connection between online and offline music sharing. The users can see music shared in the pre-definied location when they are within 100 meters of the location.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+1.View and share music through physical interaction.<br>
+2. Play and interact with other user-generated music.<br>
+3. Customised profile page.<br>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Map page
 
-### `npm test`
+The map is implemented via the react-native-maps module
+<div style="display: flex; width: 100%;">
+<figure>
+    <img
+    src="https://mattluscombe.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdacdf3bc-49aa-4a75-b475-256ddf23cd87%2FHow_Should_the_App_Look__Function.003.png?table=block&id=32d3f4ab-6a07-4314-b199-903b8342ef9e&spaceId=3a1e6697-269f-42da-bfc5-96b033e213cf&width=1420&userId=&cache=v2"> 
+    <figcaption>Map page: When there's no music nearby<figcaption>
+</figure>
+<br><br><br>
+<figure>
+    <img
+    src="https://mattluscombe.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F417ee4d3-1c12-4a7b-aca2-d935bde3f53b%2FHow_Should_the_App_Look__Function.001.png?table=block&id=333ed7db-974a-44f9-871a-3f2c0e0be5a6&spaceId=3a1e6697-269f-42da-bfc5-96b033e213cf&width=2000&userId=&cache=v2"
+    >
+    <figcaption>Map page: When there's music nearby<figcaption>
+</figure>
+<br>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</br>
 
-### `npm run build`
+- View the pre-defined locations represented by purple circles.
+    - Each location has a radius of 100 meters and the pre-defined locations & the user’s current location is calculated via the Geolib module.
+<br><br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Now Playing page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div style="display: flex; width: 100%;">
+<figure>
+    <img
+    src="https://mattluscombe.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff3193555-37c9-4928-b80a-0d1f493bbe9d%2FHow_Should_the_App_Look__Function.004.png?table=block&id=b37681f3-cd96-4294-9653-2b12c2809273&spaceId=3a1e6697-269f-42da-bfc5-96b033e213cf&width=2000&userId=&cache=v2"> 
+    <figcaption>Now Playing page: When there's no music nearby<figcaption>
+</figure>
+<br><br><br>
+<figure>
+    <img
+    src="https://mattluscombe.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F417ee4d3-1c12-4a7b-aca2-d935bde3f53b%2FHow_Should_the_App_Look__Function.001.png?table=block&id=333ed7db-974a-44f9-871a-3f2c0e0be5a6&spaceId=3a1e6697-269f-42da-bfc5-96b033e213cf&width=1420&userId=&cache=v2"
+    >
+    <figcaption>Now Playing page: When there's music nearby<figcaption>
+</figure>
+<br>
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+</br>
 
-### `npm run eject`
+- Play/Stop music shared with the location by clicking the `Play button`.
+- See profile picture and profile name.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Profile page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div style="display: flex; width: 100%;">
+<figure>
+    <img
+    src="https://mattluscombe.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F382612cd-39c1-4223-a31d-e2c2729568f3%2FHow_Should_the_App_Look__Function.005.png?table=block&id=192638f3-680f-4ebc-ac47-4bb7d9b5ce1e&spaceId=3a1e6697-269f-42da-bfc5-96b033e213cf&width=1420&userId=&cache=v2"> 
+    <figcaption>Profile page: default status<figcaption>
+</figure>
+<br><br><br>
+<figure>
+    <img
+  src="https://mattluscombe.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe20e0b80-8a0a-4725-a7e8-46772fe81559%2FHow_Should_the_App_Look__Function.006.png?table=block&id=95d8ec1a-b2d5-4a17-8348-e260ae0d8ff1&spaceId=3a1e6697-269f-42da-bfc5-96b033e213cf&width=1420&userId=&cache=v2"
+      > 
+    <figcaption>Profile page: When profile picture and name are added<figcaption>
+</figure>
+<br>
+</div>
+</br>
